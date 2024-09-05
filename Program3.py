@@ -22,15 +22,12 @@ level3 = "semiprofessional"
 lower = 2000
 upper = 3000
 
-print("my name is ", name, " , I am ", age, "years old")
-print("my skills are")
-print("- ", skill1, " (", level1, ")")
-print("- ", skill2, " (", level2, ")")
-print("- ", skill3, " (", level3, " )")
-print("I am looking for a job with a salary of", lower, "-", upper, "dollars per month")
-
-
-
+print("my name is", name + ", I am", age, "years old")
+print("\nmy skills are")
+print("-", skill1, "(" + level1 + ")")
+print("-", skill2, "(" + level2 + ")")
+print("-", skill3, "(" + level3 + ")")
+print("\nI am looking for a job with a salary of", str(lower) + "-" + str(upper), "dollars per month")
 
 
 ## Problem 2 ##
@@ -48,6 +45,11 @@ print("I am looking for a job with a salary of", lower, "-", upper, "dollars per
 #
 # - The program should work correctly even if the values of the variables are changed.
 
-x = input("X val: ")
+x = input("\nX val: ")
 y = input("Y val: ")
+
+print(f"\n{x} + {y} =", int(x) + int(y))
+print(f"{x} - {y} =", int(x) - int(y))
+print(f"{x} * {y} =", int(x) * int(y))
+print(f"{x} / {y} =", int(x) / int(y))
 
